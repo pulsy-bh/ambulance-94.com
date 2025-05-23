@@ -8,7 +8,7 @@
 # For technical reasons, this file is *NOT* reloaded automatically when you use
 # 'bundle exec jekyll serve'. If you change this file, please restart the server process.
 #
-# If you need help with YAML syntax, here are some quick references for you: 
+# If you need help with YAML syntax, here are some quick references for you:
 # https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/#yaml
 # https://learnxinyminutes.com/docs/yaml/
 #
@@ -27,6 +27,8 @@
 # baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://pulsy-bh.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 baseurl: "/ambulance-94.com"
+# baseurl: ""
+
 # Build settings
 plugins:
   - jekyll-sitemap #https://github.com/jekyll/jekyll-sitemap
@@ -36,6 +38,8 @@ plugins:
 # Where things are
 source              : ./src
 destination         : ./_site
+
+
 # layouts_dir         : _layouts # Don't rename this, watch wouldn't't work
 # data_dir            : _data # Don't rename this, watch wouldn't't work
 # includes_dir        : _includes # Don't rename this, watch wouldn't't work
@@ -72,5 +76,5 @@ theme: null
 remote_theme: null
 
 # Si vous utilisez GitHub Pages, désactivez également le thème par défaut de GitHub Pages
-# github: 
+# github:
 #   is_project_page: false
