@@ -53,7 +53,7 @@ description: "Réservez facilement nos services d'ambulance médicalisée en lig
                                 </div>
                             </div>
                             <hr>
-                            <div class="form-group has-feedback <?=$data['adresse-depart']['status']?>">
+                            <div class="form-group has-feedback ">
                                 <label for="adresse-depart">Adresse de départ</label>
                                 <input type="text" class="form-control" id="adresse-depart" name="adresse-depart"
                                     placeholder="Adresse-depart">
@@ -61,25 +61,17 @@ description: "Réservez facilement nos services d'ambulance médicalisée en lig
 
                             <div class="row">
                                 <div class="col-sm-6">
-                                    <div class="form-group has-feedback <?=$data['date-aller']['status']?>">
+                                    <div class="form-group has-feedback">
                                         <label for="date-aller">Date (aller)</label>
-                                        <div class="input-group bootstrap-datepicker">
-                                            <input type="text" class="form-control" id="date-aller" name="date-aller"
-                                                placeholder="Date de départ">
-                                            <span class="input-group-addon"><span
-                                                    class="fa fa-calendar fa-fw"></span></span>
-                                        </div>
+                                        <input type="date" class="form-control" id="date-aller" name="date-aller"
+                                        placeholder="Date de départ">
                                     </div>
                                 </div>
                                 <div class="col-sm-6">
-                                    <div class="form-group has-feedback <?=$data['heure-aller']['status']?>">
+                                    <div class="form-group has-feedback">
                                         <label for="heure-aller">Heure (aller)</label>
-                                        <div class="input-group clockpicker">
-                                            <input type="text" class="form-control" id="heure-aller" name="heure-aller"
+                                        <input type="time" class="form-control" id="heure-aller" name="heure-aller"
                                                 placeholder="Heure de départ">
-                                            <span class="input-group-addon"><span
-                                                    class="fa fa-clock-o fa-fw"></span></span>
-                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -92,7 +84,7 @@ description: "Réservez facilement nos services d'ambulance médicalisée en lig
                         <fieldset>
                             <div class="row">
                                 <div class="col-sm-6">
-                                    <div class="form-group has-feedback <?=$data['adresse-destination']['status']?>">
+                                    <div class="form-group has-feedback">
                                         <label for="adresse-destination">Adresse de destination</label>
                                         <input type="text" class="form-control" id="adresse-destination"
                                             name="adresse-destination" placeholder="Adresse">
@@ -100,7 +92,7 @@ description: "Réservez facilement nos services d'ambulance médicalisée en lig
                                     </div>
                                 </div>
                                 <div class="col-sm-6">
-                                    <div class="form-group has-feedback <?=($form_is_submitted)?'has-success':''?>">
+                                    <div class="form-group has-feedback">
                                         <label>Trajet</label>
                                         <div class="checkbox" style="margin-top: 0;">
                                             <input type="checkbox" id="trajet-aller-simple" name="trajet-aller-simple"
@@ -120,7 +112,7 @@ description: "Réservez facilement nos services d'ambulance médicalisée en lig
                         <hr>
                 </div>
             </div>
-            <div class="form-group has-feedback <?=$data['message']['status']?>">
+            <div class="form-group has-feedback">
                 <label for="message">Message</label>
                 <textarea class="form-control" id="message" name="message" rows="6"></textarea>
             </div>
