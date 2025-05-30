@@ -856,8 +856,8 @@ pre code {
 }
 
 .row {
-    margin-left : -15px;
-    margin-right: -15px
+    /* margin-left : -15px; */
+    /* margin-right: -15px */
 }
 
 .col-lg-1,
@@ -10109,6 +10109,7 @@ section.devis2 .has-feedback .form-control-feedback {
 
 .noPadding {
     padding: 0px;
+    overflow-x: hidden;
 }
 
 @media(max-width:500px) {
@@ -10401,6 +10402,27 @@ footer h3 {
     margin       : 7px 7px 7px 7px;
     padding      : 50px 30px 48px 32px;
     display      : inline-block;
+}
+
+@media (min-width: 767px) and (max-width: 1240px){
+    .bgbleu, .bgbleu1, .bgbleu2 {
+        padding: 20px !important;
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+
+        .col-sm-3 {
+            width: auto !important;
+        }
+
+        .col-sm-9{
+            width: 100%;
+        }
+
+        h2{
+            font-size: 20px;
+        }
+    }
 }
 
 .bgbleu h3,
